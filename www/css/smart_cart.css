@@ -1,0 +1,83 @@
+/* 
+SmartCart 2.0 plugin 
+http://www.techlaboratory.net
+http://tech-laboratory.blogspot.com
+*/
+
+.scMain { position:relative; font: normal 12px Verdana, Arial, Helvetica, sans-serif;color: #069; width:700px; }
+.scMain .scTabs{ position:relative;color: #069; background: transparent; border: 1px solid #ccc; height:300px; }
+.scMain .scBottomBar { display:block; position: relative; padding: 3px; width:692px; height:40px;border: 1px solid #aaa; border-bottom: 1px solid #aaa;background: #f5f5f5 url(/css/top_bg.gif);}
+
+/* Cart Styles */
+.scMain .scCartHeader { display:block; position: relative; padding-top: 2px; padding-bottom: 2px; width:698px; height:23px; border-bottom: 1px solid #ccc; background: #f5f5f5; }
+.scMain .scCartHeader .scCartTitle { display:block; position: relative; padding-top: 4px;padding-left: 5px;height:18px; border-right: 1px solid #ccc;float:left;}
+.scMain .scCartHeader .scCartTitle1 {width:290px; }
+.scMain .scCartHeader .scCartTitle2 {width:100px; }
+.scMain .scCartHeader .scCartTitle3 {width:70px; }
+.scMain .scCartHeader .scCartTitle4 {width:100px; }
+.scMain .scCartHeader .scCartTitle5 {width:100px;}
+.scMain .scCartList { display:block; position: relative; width:100%; height:264px;;background: #fff;overflow:auto;}
+.scMain .scCartList .scCartItem { display:block; position: relative; padding-top: 2px; padding-bottom: 2px;margin-top: 3px;width:100%;/* 898px */
+ border-bottom: 1px solid #ccc; background: #f5f5f5;float:left;}
+.scMain .scCartList .scCartItem .scCartItemTitle { display:block; position: relative; padding-top: 5px;padding-left: 5px; 
+ border-right: 1px solid #ccc;float:left;}
+.scMain .scCartList .scCartItem .scCartItemTitle1 { padding-top: 2px; width:290px; }
+.scMain .scCartList .scCartItem .scCartItemTitle1 div, .scMain .scCartList .scCartItem .scCartItemTitle1 img {margin-left: 3px; float:left; }
+.scMain .scCartList .scCartItem .scCartItemTitle1 div{ display:block; overflow: hidden; width:245px; }
+.scMain .scCartList .scCartItem .scCartItemTitle2 {width:100px;height:28px;}
+.scMain .scCartList .scCartItem .scCartItemTitle3 {width:70px; height:28px; }
+.scMain .scCartList .scCartItem .scCartItemTitle4 {width:100px; height:28px; }
+.scMain .scCartList .scCartItem .scCartItemTitle5 { }
+
+/* Product List Styles */
+.scMain .scSearchPanel { display:block; position: relative; padding: 2px; width:692px; height:23px;border: 1px solid #f5f5f5; border-bottom: 1px solid #ccc; background: #f5f5f5; }
+.scMain .scSearchPanel .scTxtSearch { display:block; position: relative; padding: 2px; height:18px; line-height:18px;margin-left:1px; border:1px solid #aaa; padding:1px 5px; width:150px; color:#069; float:left; }
+.scMain .scSearchPanel .scLabelSearch {display:block;position: relative; padding: 2px; height:18px; line-height:18px;margin-left:1px;color:#069;float:left;}
+.scMain .scSearchPanel .scLabelCategory {display:block;position: relative; padding: 2px; height:18px; line-height:18px;margin-left:10px;color:#069;float:left;}
+.scMain .scSearchPanel .scSelCategory { display:block; position: relative; padding: 1px;margin-left:1px; border:1px solid #aaa; padding:1px; color:#069; float:left; }
+.scMain .scProductList { display:block; position: relative; padding: 3px; width:690px; height:264px;;background: #fff;overflow:auto;}
+.scMain .scProductList .scProducts { display:block; position: relative; margin-top: 3px; width:100%;border: 1px solid #f5f5f5; border-bottom: 1px solid #ccc; background: #f5f5f5; overflow:visible;float:left;}
+.scMain .scProductList .scProducts:hover { border: 1px solid #ccc;}
+.scMain .scProductList .scProducts .scPDiv1 { padding:2px; float:left;}
+.scMain .scProductList .scProducts .scPDiv2 { margin-left:3px; margin-bottom:3px; float:left; width:400px;padding:2px;}
+.scMain .scProductList .scProducts .scPDiv3 { margin-right:10px; float:right; width:200px; }
+
+.scMain ul.scMenuBar {display:block; list-style: none; position: relative; height:33px; clear: both; border: 1px solid #aaa; border-bottom: 1px solid #aaa; background: #f5f5f5 url(/css/top_bg.gif); }
+.scMain ul.scMenuBar li {position: relative; padding-right: 2px; float: left;}
+.scMain ul.scMenuBar li a { position:relative; display:block; margin-left:5px; margin-top:2px; padding-top:4px; text-decoration: none; height:25px; width:180px; color:#727272;
+font: normal 13px Verdana, Arial, Helvetica, sans-serif; outline-style:none; text-align:center; background: #fcfcfc; border: 1px solid #aaa; border-bottom: 1px solid #fcfcfc;}
+.scMain ul.scMenuBar li a:hover { color:#069; background: #f2f2f2; border-bottom: 1px solid #f2f2f2; }
+.scMain ul.scMenuBar li a.sel { color:#069; background: #f5f5f5; cursor:text; font-weight:bold; border-bottom: 1px solid #f5f5f5; height:26px; bottom:-1px; }
+
+.scProductImage {position:relative; width:45px; overflow:hidden; float:left; margin:1px 1px 1px 1px; background:transparent; border:1px solid #aaa; }
+.scProductImageSmall {width:28px; height:28px; overflow:hidden; float:left; background:transparent; border:1px solid #aaa; }
+.sImgLoader {position:absolute; margin-left:25px; margin-top:10px; background: #fff;} 
+.scSearch { display:block; margin-left:5px; padding-top:3px; text-decoration: none; height:17px; width:80px; color:#069;
+font: normal 12px Verdana, Arial, Helvetica, sans-serif; outline-style:none; text-align:center; background: #fcfcfc; border: 1px solid #aaa; float:left; 
+-webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.scSearch:hover {color:#fff; background: #069; border: 1px solid #069; }
+.scRemove { display:block; margin-left:3px; padding-top:3px; text-decoration: none; height:17px; width:70px; color:#069;
+font: normal 12px Verdana, Arial, Helvetica, sans-serif; outline-style:none; text-align:center; background: #fcfcfc; border: 1px solid #aaa; float:left; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.scRemove:hover {color:#fff; background: #069; border: 1px solid #069; }
+.scAddToCart { display:block; margin-top:12px; padding-top:5px; text-decoration: none; height:18px; width:80px; color:#069;
+font: normal 11px Verdana, Arial, Helvetica, sans-serif; outline-style:none; text-align:center; background: #fcfcfc; border: 1px solid #aaa; float:right; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.scAddToCart:hover {color:#fff; background: #069; border: 1px solid #069; } 
+.scTxtQuantity {margin-top:15px; margin-right:5px; border:1px solid #eee; padding:1px 5px; width:25px; float:left;}
+.scTxtQuantity2 { border:1px solid #eee; padding:1px 5px; width:25px; float:left;}
+.scLabelQuantity {margin-top:15px; padding:1px 5px; float:left;}
+.scLabelSubtotalText {display:block; margin-top:5px; padding:3px; font: bold 18px Verdana, Arial, Helvetica, sans-serif; float:right;}
+.scLabelSubtotalValue {display:block; margin-top:3px; margin-left:5px; margin-right:20px; padding:5px; background:#f5f5f5; font: bold 18px Verdana, Arial, Helvetica, sans-serif; border: 1px solid #aaa; float:right;}
+.scCheckoutButton { display:block; margin-top:4px; margin-right:10px; padding-top:7px; text-decoration: none; height:22px; width:180px; color:#fff; font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+outline-style:none; text-align:center; background: #069; border: 1px solid #069; -webkit-border-radius: 5px; -moz-border-radius: 5px; float:right;}
+.scCheckoutButton:hover { color:#fff; background: #EA8511; border: 1px solid #EA8511; }
+.scMessageBar {position:relative; padding:10px; top:10px; left:4%; font: bold 13px Verdana, Arial, Helvetica, sans-serif; color: #069; background: #ffd; border: 1px solid #045;}
+.scMessageBar {position:relative; padding:10px; top:10px; left:4%; font: bold 13px Verdana, Arial, Helvetica, sans-serif; color: #069; background: #ffd; border: 1px solid #045;
+width:90%; height:18px; text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+
+.scMessageBar2 {position:relative; margin-left:10px; margin-right:10px; padding:5px; padding-left:5px; padding-right:5px; top:3px; font: normal 12px Verdana, Arial, Helvetica, sans-serif; color: #000;
+background: #ffd; border: 1px solid #44; text-align:center; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+
+/*TOOLTIP CSS */
+.tooltip{position:absolute; z-index:999; background:#aaa; border:1px solid #aaa; color:#fff; width:auto; text-align: left; overflow:visible; }
+
+.tooltip img{ float:left; background:#fff;}
