@@ -17,8 +17,7 @@
 
 <div id="main" role="main"><article>
 
-<h1>Оформление заявки 
-на поставку запчастей</h1>
+<h1>Оформление заявки на поставку запчастей</h1>
 
 <form action="/sendcart.php" method='post'>
 <table id="final">

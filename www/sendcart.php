@@ -32,6 +32,7 @@ $content.='<br><hr><br>';
 	
     $content.="</hr>";
 	
+	/* comments next line and uncomment last absac to send email message */
 	echo $content;
     /*
     $subject = 'Заказ с сайта ' .$_SERVER['SERVER_NAME'];
