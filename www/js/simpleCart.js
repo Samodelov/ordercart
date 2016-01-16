@@ -66,19 +66,19 @@
 
 				// default options
 				settings = {
-					checkout				: { type: "SendForm", email: "alsu.fatxullina@mail.ru" },
+					checkout				: { type: "SendForm" },
 					currency				: "RUR",
 					language				: "russian-ru",
 
 					cartStyle				: "table",
 					cartColumns			: [
-						{ attr: "name", label: "Наименование" },
-						{ attr: "article", label: "Номер по каталогу" },
-						{ attr: "price", label: "Цена", view: 'currency' },
+						{ attr: "name", label: "РќР°РёРјРµРЅРѕРІР°РЅРёРµ" },
+						{ attr: "article", label: "РќРѕРјРµСЂ РїРѕ РєР°С‚Р°Р»РѕРіСѓ" },
+						{ attr: "price", label: "Р¦РµРЅР°", view: 'currency' },
 						//{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Количество" },
+						{ attr: "quantity", label: "РљРѕР»РёС‡РµСЃС‚РІРѕ" },
 						//{ view: "increment", label: false },
-						{ attr: "total", label: "Сумма", view: 'currency' },
+						{ attr: "total", label: "РЎСѓРјРјР°", view: 'currency' },
 						{ view: "remove", text: "&times;", label: false }
 					],
 
@@ -1144,13 +1144,17 @@
 							simpleCart.each(settings.excludeFromCheckout, function (field_name) {
 								if (field_name === attr) { send = false; }
 							});
+							//if (send) {
+							//	options_list.push(attr + ": " + val);
+							//}
 							if (send) {
-								options_list.push(attr + ": " + val);
+							    data['item_op_'+attr+'_'+counter] = val;
 							}
+							
 						});
 
 						// add the options to the description
-						data['item_options_' + counter] = options_list.join(", ");
+						//data['item_options_' + counter] = options_list.join(", ");
 					});
 
 
